@@ -13,6 +13,9 @@ class Solution(object):
 
         numsDict = {}
 
+        # Create a dictionary when iterating through the array
+        # Every time, just check if (target-elem) is in the array
+        # If yes, means there is a hit
         for i in xrange(0, len(nums)):
             elem = nums[i]
             if target - elem in numsDict.keys():
